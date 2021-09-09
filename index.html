@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="src/style/style.css" />
+
+    <title>TheMovieDB</title>
+  </head>
+  <body>
+    <nav class="p-4 fixed-top">
+      <div class="container">
+        <!-- appbar -->
+        <app-bar>nama</app-bar>
+        <!-- end appbar -->
+
+        <!-- search -->
+        <div class="input-group my-3">
+          <input
+            type="text"
+            class="form-control input-keyword me-2 rounded-pill"
+            placeholder="Search"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn search-button rounded-pill btn-yellow"
+            type="button"
+            id="button-addon2"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- end search -->
+    <div class="container">
+      <!-- item -->
+      <div class="row movie-container"></div>
+      <!-- end item -->
+    </div>
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal -->
+
+    <script type="module" src="dist/main.js"></script>
+  </body>
+</html>

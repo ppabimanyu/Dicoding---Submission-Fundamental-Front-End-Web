@@ -1,0 +1,38 @@
+body {
+  background-color: rgba(211, 210, 214, 0.65);
+}
+nav {
+  background-color: #2c2e43;
+}
+
+app-bar {
+  color: #ffd523;
+}
+
+.btn-yellow {
+  background-color: #ffd523;
+  color: #595260;
+}
+
+.btn-yellow:hover {
+  background-color: #a38500;
+  color: #f9f2ff;
+}
+
+.movie-container {
+  margin-top: 200px;
+}
+
+.info {
+  height: 100px;
+}
+
+.card-movie {
+  box-shadow: 8px 8px 8px rgba(89, 82, 96, 0.5);
+  border-radius: 10px;
+}
+.card-movie:hover {
+  box-shadow: 14px 14px 8px rgba(89, 82, 96, 0.5);
+  transform: scale(1.02);
+  transition: 0.3s;
+}
